@@ -1,2 +1,2 @@
-chef_license "accept"
-validation_key "/c/chef/validation.pem"
+chef_license "{{.accept}}"
+chef_server_url "{{.https://mychefserver.com/}}"
