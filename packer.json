@@ -2,7 +2,6 @@
   "variables": {
     "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
     "aws_secret_key": "{{env `AWS_SECRET_KEY_ID`}}",
-    "chef_license":  "{{env `CHEF_LICENSE`}}"
   },
   "builders": [{
 
