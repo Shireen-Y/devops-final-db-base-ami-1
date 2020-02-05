@@ -10,7 +10,8 @@
 
 include_recipe 'apt'
 
-
+chef_name = node['chef_client']['chef_license'] = 'accept'
+include_recipe node['chef_client']['chef_license'] = 'accept'
 
 # THIS CODE WORKS FOR MONGOD VERSION 3.2.20
 bash 'install_mongod' do
