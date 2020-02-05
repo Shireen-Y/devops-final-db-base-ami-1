@@ -43,7 +43,8 @@
     },
     {
       "type": "chef-client",
-      "config_template": "./client.rb"
+      "config_template": "./client.rb",
+      "server_url": "https://mychefserver.com"
     }
   ]
 }
