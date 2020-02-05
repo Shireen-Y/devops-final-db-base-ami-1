@@ -43,6 +43,10 @@
       "cookbook_paths": ["./berks-cookbooks/filebeat/berks-cookbooks/"],
       "run_list": ["filebeat::default"],
       "chef_license": "accept"
+    },
+    {
+      "type": "chef-client",
+      "config_template": "./client.rb"
     }
   ]
 }
