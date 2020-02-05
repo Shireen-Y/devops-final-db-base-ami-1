@@ -44,7 +44,7 @@
     },
     {
       "type": "chef-client",
-      "config_template": "client.rb"
+      "config_template": "./client.rb"
     }
   ]
 }
