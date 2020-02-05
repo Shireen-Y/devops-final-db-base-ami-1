@@ -41,10 +41,6 @@
       "type": "chef-solo",
       "cookbook_paths": ["./berks-cookbooks/filebeat/berks-cookbooks/"],
       "run_list": ["filebeat::default"]
-    },
-    {
-      "type": "chef-client",
-      "config_template": "./client.rb"
     }
   ]
 }
