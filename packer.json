@@ -35,17 +35,14 @@
     {
       "type": "chef-solo",
       "cookbook_paths": ["./berks-cookbooks/"],
-      "run_list": ["mongod-replica-config::default"]
+      "run_list": ["mongod-replica-config::default"],
+      "chef_license": "accept"
     },
     {
       "type": "chef-solo",
       "cookbook_paths": ["./berks-cookbooks/filebeat/berks-cookbooks/"],
-      "run_list": ["filebeat::default"]
-    },
-    {
-      "type": "chef-client",
-      "chef_license": "accept",
-      "server_url": "https://mychefserver.com/"
+      "run_list": ["filebeat::default"],
+      "chef_license": "accept"
     }
   ]
 }
