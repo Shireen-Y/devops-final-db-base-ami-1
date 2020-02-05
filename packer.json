@@ -43,7 +43,7 @@
     },
     {
       "type": "chef-client",
-      "config_template": "./client.rb",
+      "chef_license": "accept",
       "server_url": "https://mychefserver.com/"
     }
   ]
