@@ -44,7 +44,7 @@
     {
       "type": "chef-client",
       "config_template": "./client.rb",
-      "server_url": "https://mychefserver.com"
+      "server_url": "https://localhost:80"
     }
   ]
 }
