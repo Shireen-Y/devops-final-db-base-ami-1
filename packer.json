@@ -14,7 +14,7 @@
     "subnet_id": "subnet-0a1d94ff141e2d80e",
     "associate_public_ip_address": "true",
     "ssh_keypair_name": "Eng-48-common-key",
-    "ssh_private_key_file": "/home/jenkins/.ssh/Eng-48-common-key.pem",
+    "ssh_private_key_file": "~/.ssh/Eng-48-common-key.pem",
 
     "region": "eu-west-1",
     "source_ami_filter": {
@@ -42,9 +42,8 @@
       "run_list": ["filebeat::default"]
     },
     {
-      "type": "chef-client",
-      "config_template": "./berks-cookbooks/client.rb",
-      "server_url": "https://localhost:80"
+      "type": "chef-solo",
+      "execute_command": "{{if .Sudo}}sudo {{end}}chef-client --no-color -c {{.ConfigPath}} -j {{.JsonPath}} --chef-license accept-no-persist",
     }
   ]
 }
