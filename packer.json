@@ -43,7 +43,7 @@
     },
     {
       "type": "chef-client",
-      "config_template": "./client.rb",
+      "config_template": "./berks-cookbooks/client.rb",
       "server_url": "https://localhost:80"
     }
   ]
