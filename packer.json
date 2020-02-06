@@ -43,7 +43,7 @@
     },
     {
       "type": "chef-solo",
-      "execute_command": "{{if .Sudo}}sudo {{end}}chef-client --no-color -c {{.ConfigPath}} -j {{.JsonPath}} --chef-license accept-no-persist",
+      "execute_command": "{{if .Sudo}}sudo {{end}}chef-client --no-color -c {{.ConfigPath}} -j {{.JsonPath}} --chef-license accept-no-persist"
     }
   ]
 }
