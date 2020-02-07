@@ -4,4 +4,3 @@ This is a cookbook for building an AMI to act as the basic provisioning for the 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 Hello Sparta :)
-
